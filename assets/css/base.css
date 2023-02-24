@@ -1,0 +1,57 @@
+:root{
+    --bgc-gray:#f1ebebb3;
+    --white-color:#fff;
+    --black-color:#000;
+    --text-color:#333;
+    --color-hover:rgb(238, 77, 45);
+}
+*{
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+@keyframes appear {
+    from{
+        opacity: 0;        
+    }
+    to{
+        opacity: 1;        
+    }
+}
+@keyframes growth{
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1 ;
+        transform: scale(1);
+    }
+}
+@keyframes moveLeft{
+    20%{
+        transform: translateX(0%);
+    }
+    40%{
+        transform: translateX(-100%);
+    }
+    60%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-400%);
+    }
+
+}
