@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
     <title>Shoppe Việt Nam</title>
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon_shoppe.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.3.0-web/css/all.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
     <div id="main">
@@ -35,18 +35,18 @@
                             <div class="header__qr">
                                 <img  src="./assets/img/img_header/Qr_download.png" alt="QR_download" class="header__qr-download">
                                 <div class="header__qr-apps">
-                                    <img src="./assets/img/img_header/Qr_appstore.png" alt="Link_Appstore" class="header___qr-apps-link">
-                                    <img src="./assets/img/img_header/Qr_googleplay.png" alt="Link_Googleplay" class="header___qr-apps-link">
-                                    <img src="./assets/img/img_header/Qr_gallery.png" alt="Link_Gallery" class="header___qr-apps-link">
+                                    <img src="./assets/img/img_header/Qr_appstore.png" alt="Link_Appstore" class="header__qr-apps-link">
+                                    <img src="./assets/img/img_header/Qr_googleplay.png" alt="Link_Googleplay" class="header__qr-apps-link">
+                                    <img src="./assets/img/img_header/Qr_gallery.png" alt="Link_Gallery" class="header__qr-apps-link">
                                 </div>
                             </div>
                         </li>
                         <li class="header__navbar-item">
                             <span class="header__navbar-title-link">
                                 Kết nối
+                            </span>                           
                                 <i class="header__navbar-icon fa-brands fa-facebook"></i>
                                 <i class="header__navbar-icon fa-brands fa-instagram"></i>
-                            </span>                           
                         </li>                    
                     </ul>
                     <ul class="header__navbar-list">
@@ -151,7 +151,7 @@
                 </div>
             </div>           
         </header>
-        <div class="content">
+        <section class="content">
                 <nav class="content__navbar grid">
                     <div class="banners__warp">
                         <div class="banners__move">
@@ -286,27 +286,494 @@
                     </section>
                 </nav> 
                 <div class="content__device">
-                    <section class="section__device grid">
+                    <section class="section__device grid mt-20">
                         <div class="section__device-menu">
                             <p class="section__device-menu-text">DANH MỤC</p>
                         </div>
                         <div class="section__device-container">
+                            <input type="radio" id="checkleft" value="Left" name="check" checked>
+                            <label for="checkleft"><i class="checkleft-icon fa-solid fa-angle-left"></i></label>
+                            <input type="radio" id="checkright" value="Right" name="check">
+                            <label for="checkright"><i class="checkright-icon fa-solid fa-angle-right"></i></label>                            
                             <ul class="device__list">
                                 <a href="" class="device-link">
                                     <li class="device__item">
-                                        <div class="device__item-frame">
-                                            <div class="device__item-frame-logo">
-                                                
-                                            </div>
+                                        <div class="device__item-frame fl-ct">                                            
+                                            <img src="./assets/img/img_slider/sp1.png" alt="Quần Áo Nam" class="device__item-frame-img">                                            
                                             <span class="device__item-frame-text">Thời Trang Nam</span>
                                         </div>
                                     </li>
                                 </a>
+                                <a href="" class="device-link">
+                                    <li class="device__item">
+                                        <div class="device__item-frame fl-ct">                                            
+                                            <img src="./assets/img/img_slider/sp2.png" alt="Quần Áo Nam" class="device__item-frame-img">                                            
+                                            <span class="device__item-frame-text">Điện Thoại & Phụ Kiện</span>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="" class="device-link">
+                                    <li class="device__item">
+                                        <div class="device__item-frame fl-ct">                                            
+                                            <img src="./assets/img/img_slider/sp3.png" alt="Quần Áo Nam" class="device__item-frame-img">                                            
+                                            <span class="device__item-frame-text">Thiết Bị Điện Tử</span>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="" class="device-link">
+                                    <li class="device__item">
+                                        <div class="device__item-frame fl-ct">                                            
+                                            <img src="./assets/img/img_slider/sp4.png" alt="Quần Áo Nam" class="device__item-frame-img">                                            
+                                            <span class="device__item-frame-text">Máy Tính & Laptop</span>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="" class="device-link">
+                                    <li class="device__item">
+                                        <div class="device__item-frame fl-ct">                                            
+                                            <img src="./assets/img/img_slider/sp5.png" alt="Quần Áo Nam" class="device__item-frame-img">                                            
+                                            <span class="device__item-frame-text">Máy Ảnh & Máy Quay Phim</span>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="" class="device-link">
+                                    <li class="device__item">
+                                        <div class="device__item-frame fl-ct">                                            
+                                            <img src="./assets/img/img_slider/sp6.png" alt="Quần Áo Nam" class="device__item-frame-img">                                            
+                                            <span class="device__item-frame-text">Đồng Hồ</span>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="" class="device-link">
+                                    <li class="device__item">
+                                        <div class="device__item-frame fl-ct">                                            
+                                            <img src="./assets/img/img_slider/sp7.png" alt="Quần Áo Nam" class="device__item-frame-img">                                            
+                                            <span class="device__item-frame-text">Giày Dép Nam</span>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="" class="device-link">
+                                    <li class="device__item">
+                                        <div class="device__item-frame fl-ct">                                            
+                                            <img src="./assets/img/img_slider/sp8.png" alt="Quần Áo Nam" class="device__item-frame-img">                                            
+                                            <span class="device__item-frame-text">Thiết Bị Điện Gia Dụng</span>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="" class="device-link">
+                                    <li class="device__item">
+                                        <div class="device__item-frame fl-ct">                                            
+                                            <img src="./assets/img/img_slider/sp9.png" alt="Quần Áo Nam" class="device__item-frame-img">                                            
+                                            <span class="device__item-frame-text">Thể Thao & Du Lịch</span>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="" class="device-link">
+                                    <li class="device__item">
+                                        <div class="device__item-frame fl-ct">                                            
+                                            <img src="./assets/img/img_slider/sp10.png" alt="Quần Áo Nam" class="device__item-frame-img">                                            
+                                            <span class="device__item-frame-text">Ô Tô & Xe Máy & Xe Đạp</span>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="" class="device-link">
+                                    <li class="device__item">
+                                        <div class="device__item-frame fl-ct">                                            
+                                            <img src="./assets/img/img_slider/sp11.png" alt="Quần Áo Nam" class="device__item-frame-img">                                            
+                                            <span class="device__item-frame-text">Balo & Túi Ví Nam</span>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="" class="device-link">
+                                    <li class="device__item">
+                                        <div class="device__item-frame fl-ct">                                            
+                                            <img src="./assets/img/img_slider/sp12.png" alt="Quần Áo Nam" class="device__item-frame-img">                                            
+                                            <span class="device__item-frame-text">Đồ Chơi</span>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="" class="device-link">
+                                    <li class="device__item">
+                                        <div class="device__item-frame fl-ct">                                            
+                                            <img src="./assets/img/img_slider/sp13.png" alt="Quần Áo Nam" class="device__item-frame-img">                                            
+                                            <span class="device__item-frame-text">Chăm Sóc Thú Cưng</span>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="" class="device-link">
+                                    <li class="device__item">
+                                        <div class="device__item-frame fl-ct">                                            
+                                            <img src="./assets/img/img_slider/sp14.png" alt="Quần Áo Nam" class="device__item-frame-img">                                            
+                                            <span class="device__item-frame-text">Dụng cụ và thiết bị tiện ích</span>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="" class="device-link">
+                                    <li class="device__item">
+                                        <div class="device__item-frame fl-ct">                                            
+                                            <img src="./assets/img/img_slider/sp15.png" alt="Quần Áo Nam" class="device__item-frame-img">                                            
+                                            <span class="device__item-frame-text">Voucher & Dịch Vụ</span>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="" class="device-link">
+                                    <li class="device__item">
+                                        <div class="device__item-frame fl-ct">                                            
+                                            <img src="./assets/img/img_slider/sp16.png" alt="Quần Áo Nam" class="device__item-frame-img">                                            
+                                            <span class="device__item-frame-text">Giặt Giũ & Chăm Sóc Nhà Cửa</span>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="" class="device-link">
+                                    <li class="device__item">
+                                        <div class="device__item-frame fl-ct">                                            
+                                            <img src="./assets/img/img_slider/sp17.png" alt="Quần Áo Nam" class="device__item-frame-img">                                            
+                                            <span class="device__item-frame-text">Thời Trang Trẻ Em</span>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="" class="device-link">
+                                    <li class="device__item">
+                                        <div class="device__item-frame fl-ct">                                            
+                                            <img src="./assets/img/img_slider/sp18.png" alt="Quần Áo Nam" class="device__item-frame-img">                                            
+                                            <span class="device__item-frame-text">Nhà Sách Online</span>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="" class="device-link">
+                                    <li class="device__item">
+                                        <div class="device__item-frame fl-ct">                                            
+                                            <img src="./assets/img/img_slider/sp19.png" alt="Quần Áo Nam" class="device__item-frame-img">                                            
+                                            <span class="device__item-frame-text">Bách Hóa Online</span>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="" class="device-link">
+                                    <li class="device__item">
+                                        <div class="device__item-frame fl-ct">                                            
+                                            <img src="./assets/img/img_slider/sp20.png" alt="Quần Áo Nam" class="device__item-frame-img">                                            
+                                            <span class="device__item-frame-text">Phụ Kiện & Trang Sức Nữ</span>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="" class="device-link">
+                                    <li class="device__item">
+                                        <div class="device__item-frame fl-ct">                                            
+                                            <img src="./assets/img/img_slider/sp21.png" alt="Quần Áo Nam" class="device__item-frame-img">                                            
+                                            <span class="device__item-frame-text">Túi Ví Nữ</span>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="" class="device-link">
+                                    <li class="device__item">
+                                        <div class="device__item-frame fl-ct">                                            
+                                            <img src="./assets/img/img_slider/sp22.png" alt="Quần Áo Nam" class="device__item-frame-img">                                            
+                                            <span class="device__item-frame-text">Giày Dép Nữ</span>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="" class="device-link">
+                                    <li class="device__item">
+                                        <div class="device__item-frame fl-ct">                                            
+                                            <img src="./assets/img/img_slider/sp23.png" alt="Quần Áo Nam" class="device__item-frame-img">                                            
+                                            <span class="device__item-frame-text">Sức Khỏe</span>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="" class="device-link">
+                                    <li class="device__item">
+                                        <div class="device__item-frame fl-ct">                                            
+                                            <img src="./assets/img/img_slider/sp24.png" alt="Quần Áo Nam" class="device__item-frame-img">                                            
+                                            <span class="device__item-frame-text">Sắc Đẹp</span>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="" class="device-link">
+                                    <li class="device__item">
+                                        <div class="device__item-frame fl-ct">                                            
+                                            <img src="./assets/img/img_slider/sp25.png" alt="Quần Áo Nam" class="device__item-frame-img">                                            
+                                            <span class="device__item-frame-text">Nhà Cửa & Đời Sống</span>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="" class="device-link">
+                                    <li class="device__item">
+                                        <div class="device__item-frame fl-ct">                                            
+                                            <img src="./assets/img/img_slider/sp26.png" alt="Quần Áo Nam" class="device__item-frame-img">                                            
+                                            <span class="device__item-frame-text">Mẹ & Bé</span>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="" class="device-link">
+                                    <li class="device__item">
+                                        <div class="device__item-frame fl-ct">                                            
+                                            <img src="./assets/img/img_slider/sp27.png" alt="Quần Áo Nam" class="device__item-frame-img">                                            
+                                            <span class="device__item-frame-text">Thời Trang Nữ</span>
+                                        </div>
+                                    </li>
+                                </a>                                                
                             </ul>
                         </div>
                     </section>
+                    <section class="section__flashsale grid mt-20">
+                        <section class="flashsale__top" >                           
+                                <img src="./assets/img/hd1.png" alt="LoGo_FlashSale" class="flashsale__top-logo">                           
+                            <button class="flashsale__top-select">Xem tất cả 
+                                <i class="fa-solid fa-angle-right"></i>
+                            </button>
+                        </section>
+                        <section class="flashsale__body">   
+                            <ul class="flashsale-list">
+                                <button class="btn-left"><i class="btn-left-icon fa-solid fa-angle-left"></i></button>
+                                <button class="btn-right"><i class="btn-right-icon fa-solid fa-angle-right"></i></button>
+                                <a href="" class="flashsale_link-item">
+                                    <li class="flashsale-item">
+                                        <div class="flashsale-item-picture" 
+                                        style="background-image: url(/assets/img/fls2.png),url(/assets/img/fls2.jfif);
+                                                background-repeat: no-repeat;background-size: contain;background-position: center;">
+                                                <span class="flashsale__item-ratio">25% GIẢM</span>
+                                        </div>
+                                        <div class="flashsale_wrap-infor fl-ct">
+                                            <div class="flashsale-price">
+                                                <span class="flashsale-price-unit">₫</span>675.000
+                                            </div>
+                                            <div class="flashsale-quantity">ĐANG BÁN CHẠY</div>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="" class="flashsale_link-item">
+                                    <li class="flashsale-item">
+                                        <div class="flashsale-item-picture" 
+                                        style="background-image: url(/assets/img/fls2.png),url(/assets/img/fls3.png);
+                                                background-repeat: no-repeat;background-size: contain;background-position: center;">
+                                                <span class="flashsale__item-ratio">25% GIẢM</span>
+                                        </div>
+                                        <div class="flashsale_wrap-infor fl-ct">
+                                            <div class="flashsale-price">
+                                                <span class="flashsale-price-unit">₫</span>3.999
+                                            </div>
+                                            <div class="flashsale-quantity">ĐANG BÁN CHẠY</div>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="" class="flashsale_link-item">
+                                    <li class="flashsale-item">
+                                        <div class="flashsale-item-picture" 
+                                        style="background-image: url(/assets/img/fls2.png),url(/assets/img/fls2.jfif);
+                                                background-repeat: no-repeat;background-size: contain;background-position: center;">
+                                                <span class="flashsale__item-ratio">25% GIẢM</span>
+                                        </div>
+                                        <div class="flashsale_wrap-infor fl-ct">
+                                            <div class="flashsale-price">
+                                                <span class="flashsale-price-unit">₫</span>675.000
+                                            </div>
+                                            <div class="flashsale-quantity">ĐANG BÁN CHẠY</div>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="" class="flashsale_link-item">
+                                    <li class="flashsale-item">
+                                        <div class="flashsale-item-picture" 
+                                        style="background-image: url(/assets/img/fls2.png),url(/assets/img/fls1.jfif);
+                                                background-repeat: no-repeat;background-size: contain;background-position: center;">
+                                                <span class="flashsale__item-ratio">25% GIẢM</span>
+                                        </div>
+                                        <div class="flashsale_wrap-infor fl-ct">
+                                            <div class="flashsale-price">
+                                                <span class="flashsale-price-unit">₫</span>155.000
+                                            </div>
+                                            <div class="flashsale-quantity">ĐANG BÁN CHẠY</div>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="" class="flashsale_link-item">
+                                    <li class="flashsale-item">
+                                        <div class="flashsale-item-picture"
+                                        style="background-image:url(/assets/img/fls2.png), url(/assets/img/fls2.jfif);
+                                                background-repeat: no-repeat;background-size: contain;background-position: center;">
+                                                <span class="flashsale__item-ratio">25% GIẢM</span>
+                                        </div>
+                                        <div class="flashsale_wrap-infor fl-ct">
+                                            <div class="flashsale-price">
+                                                <span class="flashsale-price-unit">₫</span>675.000
+                                            </div>
+                                            <div class="flashsale-quantity">ĐANG BÁN CHẠY</div>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="" class="flashsale_link-item">
+                                    <li class="flashsale-item">
+                                        <div class="flashsale-item-picture" 
+                                        style="background-image: url(/assets/img/fls2.png),url(/assets/img/fls4.png);
+                                                background-repeat: no-repeat;background-size: contain;background-position: center;">
+                                                <span class="flashsale__item-ratio">25% GIẢM</span>
+                                        </div>
+                                        <div class="flashsale_wrap-infor fl-ct">
+                                            <div class="flashsale-price">
+                                                <span class="flashsale-price-unit">₫</span>35.000
+                                            </div>
+                                            <div class="flashsale-quantity">ĐANG BÁN CHẠY</div>
+                                        </div>
+                                    </li>
+                                </a>
+                            </ul>
+                        </section>
+                    </section>
+                    <section class="banner__flashsale grid mt-20">
+                        <a href="" class="banner__flashsale-link">
+                            <img src="./assets/img/banner_sale1.png" alt="" class="banner__flashsale-img">
+                        </a>
+                    </section>
+                    <section  class="section__mall grid mt-20">
+                        <section class="mall__top">
+                            <div class="mall__top-left">
+                            <a href="#" class="mall__top-link"><span class="mall__top-title">shoppe mall</span></a>
+                            <ul class="mall__top-list">
+                                <li class="fl-ct">
+                                    <img src="./assets/img/img_mall/1.png" alt="Logo trả hàng">
+                                    7 Ngày Miễn Phí Trả Hàng
+                                </li>
+                                <li class="fl-ct">
+                                    <img src="./assets/img/img_mall/2.png" alt="Logo xác nhận hàng ">
+                                    Hàng Chính Hãng 100%
+                                </li>
+                                <li class="fl-ct">
+                                    <img src="./assets/img/img_mall/3.png" alt="Logo vận chuyển hàng">
+                                    Miễn Phí Vận Chuyển
+                                </li>
+                            </ul>
+                             </div>
+                                <a href="#" class="mall__top-link"><span class="mall__top-text">
+                                     Xem Tất Cả
+                                    </span>
+                                    <i class="mall__top-icon fa-solid fa-angle-right"></i>
+                                </a>
+                        </section>
+                        <section class="mall__body">
+                            <section class="mall__show-product">
+                                <input type="radio" id="image1" name="image" checked>
+                                <input type="radio" id="image2" name="image">
+                                <input type="radio" id="image3" name="image">
+                                <input type="radio" id="image4" name="image">
+                                <div class="container">
+                                    <div class="featured-wrapper">
+                                        <ul class="featured-list">
+                                            <li>
+                                                <img src="./assets/img/img_mall/1.jfif" alt="">
+                                            </li>
+                                            <li>
+                                                <img src="./assets/img/img_mall/2.jfif" alt="">
+                                            </li>
+                                            <li>
+                                                <img src="./assets/img/img_mall/3.jfif" alt="">
+                                            </li>
+                                            <li>
+                                                <img src="./assets/img/img_mall/4.jfif" alt="">
+                                            </li>
+                                        </ul>
+                                        <ul class="arrows">
+                                            <li>
+                                            <label for="image1"></label>
+                                            </li>
+                                            <li>
+                                            <label for="image2"></label>
+                                            </li>
+                                            <li>
+                                            <label for="image3"></label>
+                                            </li>
+                                            <li>
+                                                <label for="image4"></label>
+                                            </li>
+                                        </ul>
+                                        <ul class="dots">
+                                            <li>
+                                            <label for="image1"></label>
+                                            </li>
+                                            <li>
+                                            <label for="image2"></label>
+                                            </li>
+                                            <li>
+                                            <label for="image3"></label>
+                                            </li>
+                                            <li>
+                                                <label for="image4"></label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                             </div>
+                            </section>
+                            <section class="mall__link-product">
+                                <ul class="mall__product_list">
+                                    <a href="#" class="product-item-link">
+                                        <li class="mall__product-item">
+                                            <img src="./assets/img/img_mall/s1.png" alt="" class="product-item-img">
+                                            <span class="product-item-name">Nội y Sabina 9k</span>
+                                        </li>
+                                    </a> 
+                                    <a href="#" class="product-item-link">
+                                        <li class="mall__product-item">
+                                            <img src="./assets/img/img_mall/s2.png" alt="" class="product-item-img">
+                                            <span class="product-item-name">Da xinh quà xịn</span>
+                                        </li>
+                                    </a>                                   
+                                    <a href="#" class="product-item-link">
+                                        <li class="mall__product-item">
+                                            <img src="./assets/img/img_mall/s3.png" alt="" class="product-item-img">
+                                            <span class="product-item-name">Siêu ưu đãi độc quyền</span>
+                                        </li>
+                                    </a> 
+                                    <a href="#" class="product-item-link">
+                                        <li class="mall__product-item">
+                                            <img src="./assets/img/img_mall/s4.png" alt="" class="product-item-img">
+                                            <span class="product-item-name">Điện thoại sale khủng</span>
+                                        </li>
+                                    </a> 
+                                    <a href="#" class="product-item-link">
+                                        <li class="mall__product-item">
+                                            <img src="./assets/img/img_mall/s5.png" alt="" class="product-item-img">
+                                            <span class="product-item-name">Mua là có quà</span>
+                                        </li>
+                                    </a> 
+                                    <a href="#" class="product-item-link">
+                                        <li class="mall__product-item">
+                                            <img src="./assets/img/img_mall/s6.png" alt="" class="product-item-img">
+                                            <span class="product-item-name">Sale chào hè 50%</span>
+                                        </li>
+                                    </a> 
+                                    <a href="#" class="product-item-link">
+                                        <li class="mall__product-item">
+                                            <img src="./assets/img/img_mall/s7.png" alt="" class="product-item-img">
+                                            <span class="product-item-name">Ưu đãi đến 40%</span>
+                                        </li>
+                                    </a> 
+                                    <a href="#" class="product-item-link">
+                                        <li class="mall__product-item">
+                                            <img src="./assets/img/img_mall/s8.png" alt="" class="product-item-img">
+                                            <span class="product-item-name">Mua 2 tặng 1</span>
+                                        </li>
+                                    </a> 
+                                </ul>
+                            </section>
+                        </section>
+                    </section>
+                    <section class="product grid mt-20">
+                        <div class="product-item">
+                            <div class="product-item-logo">
+                                <img src="./assets/img/ing_product/6.jfif" alt="Bàn trang điểm" class="product-logo-img">
+                                <img src="./assets/img/ing_product/fls2.png" alt="" class="product-logo-frame">
+                                <span class="product-item-trend">Yêu thích</span>
+                                <div class="product-item-sale">
+                                    <span class="product-sale-ratio">50%</span>
+                                    <span class="product-sale-down">GIẢM</span>
+                                </div>
+                            </div>
+                            <div class="product-item-infor">
+                                
+                            </div>
+                        </div>
+                    </section>
                 </div>
-            </div>
+        </section>
         </div>
     </div>
 </body>
