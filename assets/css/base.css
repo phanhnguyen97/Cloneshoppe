@@ -4,6 +4,11 @@
     --black-color:#000;
     --text-color:#333;
     --color-hover:rgb(238, 77, 45);
+    --color-pri:rgb(238,77,45);
+    --text-small : 1.2rem;
+    --text-nor : 1.4rem;
+    --text-head: 1.6rem;
+    --text-big: 1.8rem;
 }
 *{
     box-sizing: border-box;
@@ -18,6 +23,7 @@ html {
     width: 1200px;
     max-width: 100%;
     margin: 0 auto;
+    /* background-color: #fff; */
 }
 @keyframes appear {
     from{
@@ -38,20 +44,39 @@ html {
     }
 }
 @keyframes moveLeft{
-    20%{
+    10%{
         transform: translateX(0%);
     }
-    40%{
+    20%{
         transform: translateX(-100%);
     }
-    60%{
+    30%{
+        transform: translateX(-100%);
+    }
+    40%{
         transform: translateX(-200%);
     }
-    80%{
+    50%{
+        transform: translateX(-200%);
+    }
+    60%{
         transform: translateX(-300%);
+    }
+    70%{
+        transform: translateX(-300%);
+    }
+    80%{
+        transform: translateX(-400%);
     }
     100%{
         transform: translateX(-400%);
     }
-
+}
+.fl-ct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mt-20{
+    margin-top: 20px;
 }
