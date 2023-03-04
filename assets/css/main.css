@@ -1009,12 +1009,20 @@ width: 100%;
 
 /* Css product */
 .product{
-    background-color: var(--white-color);
+    /* background-color: var(--white-color); */
+    display: flex;
+    flex-wrap: wrap;
 }
 .product-item{
     width: calc(100% / 6);
     padding: 5px;
 
+}
+.product-item-wrap{
+    width: auto;
+    height: auto;
+    border-radius: 2px;
+    box-shadow: 0 0 1px #999;
 }
 .product-item-logo{
     width: 100%;
@@ -1031,7 +1039,6 @@ width: 100%;
 }
 .product-logo-frame{
     width: 100%;
-    height: 190px;
     position: absolute;
     top: 0;
     left: 0px;
@@ -1044,15 +1051,18 @@ width: 100%;
     position: absolute;
     top: 8px;
     left: -3px;
+    border-radius: 2px;
 }
 .product-item-trend::after{
     content: "";
     display: inline-block;
     position: absolute;
     left: 0;
-    bottom: -2px;
-    border-top: 1px solid ;
-    border-left: 1px solid transparent;
+    bottom: -5px;
+    border-top: 6px solid;
+    border-left: 4px solid transparent;
+    color: var(--color-pri);
+    filter: brightness(0.6);
 
 }
 .product-item-sale{
@@ -1061,6 +1071,15 @@ width: 100%;
     right: 0;
     background-color: #f8cc24;
     padding: 3px 3px 0;
+}
+.product-item-sale::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-width: 0 18px 4px;
+    border-color: #f8cc24 #f8cc24 transparent;
+    border-style: solid;
 }
 .product-sale-ratio,
 .product-sale-down{
@@ -1075,4 +1094,45 @@ width: 100%;
 .product-sale-down{
     color:var(--white-color) ;
     
+}
+
+.product-item-infor{
+    padding: 8px;
+}
+.product-infor-desc{
+    
+}
+.product-text-wrap{
+    min-height: 48px;
+}
+.product-desc-text{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: var(--text-small);
+}
+.product-desc-number{
+    display: flex;
+    justify-content: space-between;
+}
+.product-desc-price{
+    display: flex;
+}
+.product-price-unit{
+    font-size: var(--text-small);
+    color: var(--color-pri);
+}
+.product-price-money{
+    font-size: var(--text-big);
+    color: var(--color-pri);
+
+}
+.product-price-sell{
+
+}
+.product-sell-quantity{
+    font-size: var(--text-small);
+    opacity: 0.8;
 }
