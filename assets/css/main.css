@@ -1328,9 +1328,9 @@ font-size: var(--text-nor);
 /* ============== */
 .banquyen{
     margin: 10px 0;
-}
-.span.banquyen-text {
     text-align: center;
+}
+.banquyen-text {
     display: block;
-    font-size: var(--text-small);
+    font-size: var(--text-small)
 }
